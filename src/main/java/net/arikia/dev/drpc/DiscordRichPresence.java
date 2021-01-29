@@ -79,6 +79,11 @@ public class DiscordRichPresence extends Structure {
 		return Arrays.asList("state", "details", "startTimestamp", "endTimestamp", "largeImageKey", "largeImageText", "smallImageKey", "smallImageText", "partyId", "partySize", "partyMax", "matchSecret", "joinSecret", "spectateSecret", "instance");
 	}
 
+	public DiscordRichPresence(){
+		setStringEncoding("UTF-8");
+	}
+
+
 	/*+
 	 * Builder object provided to easily assemble DiscordRichPresence objects without having to add a huge assignment Block.
 	 * No method is essential, not called methods/unassigned fields are simply ignored and not applied in the final DiscordRichPresence
